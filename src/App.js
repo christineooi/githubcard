@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div className="container">
         <div>
-          <button class="btn waves-effect waves-light" onClick={this.handleClick}>
+          <button className="btn waves-effect waves-light" onClick={this.handleClick}>
             {this.state.active ? 'Hide' : 'Show'}
           </button>
         </div>  
@@ -41,7 +41,7 @@ class App extends Component {
                 }
                 <span className="card-title">{this.state.user.name} {this.state.user.location && <React.Fragment>({this.state.user.location})</React.Fragment>}</span>
               </div>
-              <div class="card-content">
+              <div className="card-content left-align">
                 <p>{this.state.user.bio}</p>
                 {this.state.user.public_repos && 
                 <p>Number of public repos: { this.state.user.public_repos}</p>
